@@ -1,4 +1,4 @@
-import Header from "./components/Header/Header";
+
 import Footer from "./components/Footer/Footer";
 import Home from "./Pages/Home";
 
@@ -11,7 +11,6 @@ const Layout = () => {
   
   return (
     <div className="app">
-      <Header />
       <Outlet />
       <Footer />
     </div>
