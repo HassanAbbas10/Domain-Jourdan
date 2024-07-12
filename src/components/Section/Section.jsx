@@ -1,21 +1,53 @@
-
+import secData from "@/utils/Section";
+import rightArrow from "../../Logos/rightArrow.svg";
+import ResIcon from "../../Logos/RES.svg";
 const Section = () => {
   return (
-    <div><section className="text-gray-600 body-font">
-    <div className="container px-5 py-24 mx-auto">
-      <div className="flex flex-col">
-        <div className="h-1 bg-gray-200 rounded overflow-hidden">
-          <div className="w-24 h-full bg-indigo-500"></div>
-        </div>
-        <div className="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-          <h1 className="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">Space The Final Frontier</h1>
-          <p className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Street art subway tile salvia four dollar toast bitters selfies quinoa yuccie synth meditation iPhone intelligentsia prism tofu. Viral gochujang bitters dreamcatcher.</p>
-        </div>
+    <>
+      <div className="flex flex-col justify-center items-center mt-20">
+        <h1 className="mb-4 text-2xl font-quicksand leading-4 tracking-wide">
+          LES <span className="text-custom-brown">CHAMBRES</span>
+        </h1>
+        <img
+          className="flex items-center justify-center"
+          src={ResIcon}
+          alt="ResIcon"
+          width={200}
+        />
       </div>
-      
-    </div>
-  </section></div>
-  )
-}
+      <div className="flex flex-wrap lg:ml-0 items-center justify-center ">
+        {secData.map((data) => (
+          <div key={data.id} className="p-4 md:w-1/3 sm:mb-0 mt-6">
+            <section className="text-gray-600 body-font">
+              <div className="container py-6 mx-auto">
+                <div className="flex flex-col">
+                  <div className=" h-64 overflow-hidden">
+                    <img
+                      alt="content"
+                      className="object-cover h-full w-full"
+                      src={data.picture}
+                    />
+                  </div>
+                  <h2 className="title-font font-quicksand flex mx-auto text-2xl font-medium text-gray-900 mt-6 mb-3">
+                    {data.description}
+                  </h2>
+                  <button className="flex mx-auto font-semibold mt-3 text-custom-brown  border-0 x-5">
+                    <span className="text font-quicksand">EN SAVOIR PLUS</span>
+                    <img
+                      className="ml-2"
+                      width={30}
+                      src={rightArrow}
+                      alt="arrow"
+                    />
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+        ))}
+      </div>
+    </>
+  );
+};
 
-export default Section
+export default Section;

@@ -5,9 +5,9 @@ const SenUnique = () => {
     <div>
       <section className="text-gray-600 body-font">
         <div className="max-w-screen-xl mx-auto justify-center flex px-5 py-3 md:flex-row-reverse flex-col">
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 lg:ml-0 ml-6">
             <img
-              className="object-cover object-center rounded"
+              className="object-cover object-center "
               alt="hero"
               width={900}
               src={mask}

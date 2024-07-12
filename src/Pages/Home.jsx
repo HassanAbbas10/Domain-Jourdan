@@ -12,17 +12,19 @@ import arrowDown from  '../Logos/Arrow-down.svg'
 import Reservation from "@/components/Reservation/Reservation";
 import ReservationTwo from "@/components/ReservationTwo/ReservationTwo";
 import SenUnique from "@/components/SenUnique/SenUnique";
+import Section from "@/components/Section/Section";
+import Services from "@/components/Services/Services";
 
 const Home = () => {
   return (
-    <div>
+    <>
     <div className="h-screen overflow-hidden">
       <video
         className="w-screen h-screen filter drop-shadow-2xl object-cover "
         src={HomeVideo}
         autoPlay
-        loop
         muted
+        loop
       />
       <Header />
       <div className="absolute top-32 xl:ml-24 lg:ml-18 md:ml-18 sm:ml-12 ml-12 flex flex-col gap-y-3">
@@ -66,7 +68,9 @@ const Home = () => {
     <Reservation/>
     <ReservationTwo/>
     <SenUnique/>
-    </div>
+    <Section/>
+    <Services/>
+    </>
   );
 };
 

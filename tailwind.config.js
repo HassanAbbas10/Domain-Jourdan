@@ -17,6 +17,7 @@ module.exports = {
       },
       colors: {
         'custom-brown':'#C0B384',
+        'dark-brown':'#C0B384',
         }
      
     },
