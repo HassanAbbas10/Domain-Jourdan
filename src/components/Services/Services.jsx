@@ -1,10 +1,11 @@
 import ResIcon from "../../Logos/res2.svg";
 import right2 from "../../Logos/right2.svg";
-import vec from "../../Logos/VEC.svg"
+import SvgData from "@/utils/SvgData";
+// import vec from "../../Logos/VEC.svg"
 const Services = () => {
   return (
     <>
-      <div className=" w-screen-xl h-[90vh] bg-custom-brown py-10">
+      <div className=" w-screen-xl h-[100vh] bg-custom-brown py-10">
         <div className="py-8 px-4 mx-auto max-w-screen-[1360px] text-center lg:py-16 lg:px-12">
           <div className="flex flex-col justify-center items-center">
             <h1 className="mb-4 text-2xl font-quicksand lg:leading-4 leading-9  tracking-wide ">
@@ -20,8 +21,32 @@ const Services = () => {
           </div>
 
           <div>
+{/* <div className="flex items-center justify-center">
+<img src={vec} />
+</div> */}
 
-<img src={vec}/>
+{SvgData.map((data)=>(
+    <section key={data.id} className="text-gray-600 body-font">
+  <div className="container px-5 py-24 mx-auto">
+  
+    <div className="flex flex-wrap -m-4">
+      <div className="xl:w-1/4 md:w-1/2 p-4">
+        <div className=" p-6 rounded-lg container">
+          <img className="h-20 rounded w-full object-cover object-center mb-6" src={data.} alt="content"/>
+         
+          <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Chichen Itza</h2>
+          <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+))}
+
+
+
+
 
 
 

@@ -5,6 +5,8 @@ import photo4 from "../utils/Pictures/Vlad.jpg";
 import photo5 from "../utils/Pictures/Stasiya.jpg";
 import photo6 from "../utils/Pictures/Chambre6.jpg";
 
+
+
 const secData = [
   {
     id: 1,
@@ -37,5 +39,8 @@ const secData = [
     description: "CHAMBRE FLEUR",
   },
 ];
+
+
+
 
 export default secData;
