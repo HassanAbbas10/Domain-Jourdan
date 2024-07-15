@@ -1,25 +1,12 @@
-import { Fragment } from 'react';
+import { Fragment } from "react"
 import ResIcon from '../../Logos/RES.svg'
-import photo1 from '../../utils/Pictures/1.jpg'
-import photo2 from '../../utils/Pictures/2.jpg'
-import photo3 from '../../utils/Pictures/3.jpg'
-import photo4 from '../../utils/Pictures/4.jpg'
-import photo5 from '../../utils/Pictures/5.jpg'
-import photo6 from '../../utils/Pictures/6.jpg'
-import photo7 from '../../utils/Pictures/7.jpg'
-import photo8 from '../../utils/Pictures/8.jpg'
-import photo9 from '../../utils/Pictures/9.jpg'
-import photo10 from '../../utils/Pictures/10.jpg'
-import photo11 from '../../utils/Pictures/11.jpg'
-import rightArrow from '../../Logos/rightArrow.svg'
-import './gallery.css'
-const Gallery = () => {
+const Events = () => {
   return (
     <Fragment>  
     <div className="py-8 px-4 mx-auto max-w-screen-[1360px] text-center lg:py-16 lg:px-12">
     <div className="flex flex-col justify-center items-center">
       <h1 className="mb-4 text-2xl font-quicksand leading-4 tracking-wide">
-        PHOTO DU<span className="text-custom-brown">DOMAIN</span>
+      Événements
       </h1>
       <img
         className="flex items-center justify-center"
@@ -78,6 +65,6 @@ const Gallery = () => {
     </div>
     </Fragment>
   )
-};
+}
 
-export default Gallery
+export default Events

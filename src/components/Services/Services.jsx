@@ -9,7 +9,7 @@ const Services = () => {
         <div className="py-8 px-4 mx-auto max-w-screen-[1360px] text-center lg:py-16 lg:px-12">
           <div className="flex flex-col justify-center items-center">
             <h1 className="mb-4 text-2xl font-quicksand lg:leading-4 leading-9  tracking-wide ">
-              NO SERVICES A{" "}
+              NO SERVICES A
               <span className="text-white">VOTRE DISPOSITION </span>
             </h1>
             <img
