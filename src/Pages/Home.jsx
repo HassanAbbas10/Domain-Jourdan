@@ -15,6 +15,7 @@ import SenUnique from "@/components/SenUnique/SenUnique";
 import Section from "@/components/Section/Section";
 import Services from "@/components/Services/Services";
 import Gallery from "@/components/Gallery/Gallery";
+import Events from "@/components/Events/Events";
 
 const Home = () => {
   return (
@@ -72,6 +73,7 @@ const Home = () => {
     <Section/>
     <Services/>
     <Gallery/>
+    <Events/>
     </>
   );
 };
