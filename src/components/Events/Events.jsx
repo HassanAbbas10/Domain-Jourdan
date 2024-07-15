@@ -1,5 +1,6 @@
 import { Fragment } from "react"
 import ResIcon from '../../Logos/RES.svg'
+import rightArrow from '../../Logos/rightArrow.svg'
 const Events = () => {
   return (
     <Fragment>  
@@ -15,40 +16,8 @@ const Events = () => {
         width={200}
       />
     </div>
-    <div className='photo-grid my-10'>
-      <div className='card card-wide'>
-        <img className='object-center card object-cover' src={photo1}/>
-      </div>
-      <div className='card card-wide'>
-        <img className='object-center object-cover card'  src={photo2}/>
-      </div>
-      <div className='card card-tall'>
-        <img className='object-center object-cover card' src={photo3}/>
-      </div>
-      <div className='card card-tall'>
-        <img className='object-center object-cover card' src={photo4}/>
-      </div>
-      <div className='card card-tall'>
-        <img className='object-center object-cover card' src={photo5}/>
-      </div>
-      <div className='card card'>
-        <img className='object-center object-cover card' src={photo6}/>
-      </div>
-      <div className='card card'>
-        <img className='object-center object-cover card' src={photo7}/>
-      </div>
-      <div className='card card-wide'>
-        <img className='object-center object-cover card' src={photo8}/>
-      </div>
-      <div className='card card-tall'>
-        <img className='object-center object-cover card' src={photo9}/>
-      </div>
-      <div className='card card-wide'>
-        <img className='object-center object-cover card card-wide' src={photo10}/>
-      </div>
-      <div className='card card-wide'>
-        <img className='object-center object-cover  h-full card card-tall card-wide' src={photo11}/>
-      </div>
+    <div className=''>
+     
         </div> 
 
         <div>
