@@ -5,7 +5,7 @@ import SvgData from "@/utils/SvgData";
 const Services = () => {
   return (
     <>
-      <div className=" w-screen-xl h-[100vh] bg-custom-brown py-10">
+      <div className=" w-screen-xl h-full bg-custom-brown">
         <div className="py-8 px-4 mx-auto max-w-screen-[1360px] text-center lg:py-16 lg:px-12">
           <div className="flex flex-col justify-center items-center">
             <h1 className="mb-4 text-2xl font-quicksand lg:leading-4 leading-9  tracking-wide ">
@@ -21,35 +21,35 @@ const Services = () => {
           </div>
 
           <div>
-{/* <div className="flex items-center justify-center">
+            {/* <div className="flex items-center justify-center">
 <img src={vec} />
 </div> */}
 
-{SvgData.map((data)=>(
-    <section key={data.id} className="text-gray-600 body-font">
-  <div className="container px-5 py-24 mx-auto">
-  
-    <div className="flex flex-wrap -m-4">
-      <div className="xl:w-1/4 md:w-1/2 p-4">
-        <div className=" p-6 rounded-lg container">
-          <img className="h-20 rounded w-full object-cover object-center mb-6" src={data.} alt="content"/>
-         
-          <h2 className="text-lg text-gray-900 font-medium title-font mb-4">Chichen Itza</h2>
-          <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-))}
-
-
-
-
-
-
-
+            <section className="text-gray-600 body-font">
+              <div className="container px-5 py-5 mx-auto">
+                <div className="flex flex-wrap -m-4">
+                  {SvgData.map((data) => (
+                    <div key={data.id} className="p-4 w-full sm:w-1/2 lg:w-1/3">
+                      <div className="p-6 rounded-lg text-center">
+                        <img
+                          className="rounded object-cover object-center mx-auto"
+                          width={40}
+                          src={data.picture}
+                          alt="content"
+                        />
+                        <h2 className="text-lg text-gray-900 font-medium title-font mt-4 mb-2">
+                          {data.description}
+                        </h2>
+                        <p className="leading-relaxed text-base">
+                          Fingerstache flexitarian street art 8-bit waistcoat.
+                          Distillery hexagon disrupt edison bulbche.
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
           </div>
 
           <div className="flex flex-col justify-center items-center">
@@ -59,6 +59,7 @@ const Services = () => {
               viewBox="0 0 50 50"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="mb-4"
             >
               <g clipPath="url(#clip0_83_666)">
                 <path
@@ -77,9 +78,14 @@ const Services = () => {
               </defs>
             </svg>
             <div className="text-white text-center font-['Quicksand'] flex flex-col leading-[normal]">
-                
-               <p><span className="text-black font-semibold">Check-in :</span> à parti de 15h</p> 
-            <p><span className="text-black font-semibold">Check-out :</span> au plus tard à 11h</p>
+              <p>
+                <span className="text-black font-semibold">Check-in :</span> à
+                parti de 15h
+              </p>
+              <p>
+                <span className="text-black font-semibold">Check-out :</span> au
+                plus tard à 11h
+              </p>
             </div>
             <button className="flex mx-auto  mt-3 text-white  border-0 x-5">
               <span className="text font-quicksand">

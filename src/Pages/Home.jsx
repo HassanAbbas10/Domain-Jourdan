@@ -14,6 +14,7 @@ import ReservationTwo from "@/components/ReservationTwo/ReservationTwo";
 import SenUnique from "@/components/SenUnique/SenUnique";
 import Section from "@/components/Section/Section";
 import Services from "@/components/Services/Services";
+import Gallery from "@/components/Gallery/Gallery";
 
 const Home = () => {
   return (
@@ -70,6 +71,7 @@ const Home = () => {
     <SenUnique/>
     <Section/>
     <Services/>
+    <Gallery/>
     </>
   );
 };
