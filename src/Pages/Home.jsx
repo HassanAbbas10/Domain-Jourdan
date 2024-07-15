@@ -16,6 +16,7 @@ import Section from "@/components/Section/Section";
 import Services from "@/components/Services/Services";
 import Gallery from "@/components/Gallery/Gallery";
 import Events from "@/components/Events/Events";
+import Clients from "@/components/Clients/Clients";
 
 const Home = () => {
   return (
@@ -74,6 +75,7 @@ const Home = () => {
     <Services/>
     <Gallery/>
     <Events/>
+    <Clients/>
     </>
   );
 };

@@ -19,23 +19,21 @@ const Events = () => {
         </div>
 
         <div className="flex flex-wrap -mx-4 mt-4 mb-10">
-            {eventData.map((data) => (
-                <div key={data.id} className="p-4 md:w-1/3 sm:mb-0 mb-6">
-                    <h1 className="uppercase font-quicksand text-lg py-4">
-                        {data.heading}
-                    </h1>
-                    <div className="rounded-lg h-64 overflow-hidden">
-                        <img
-                            alt="content"
-                            className="object-cover object-center h-full w-full"
-                            src={data.picture}
-                        />
-                    </div>
-                    <p className="text-base leading-relaxed py-14">
-                        {data.desc}
-                    </p>
-                </div>
-            ))}
+          {eventData.map((data) => (
+            <div key={data.id} className="p-4 md:w-1/3 sm:mb-0 mb-6">
+              <h1 className="uppercase font-quicksand text-lg py-4">
+                {data.heading}
+              </h1>
+              <div className="rounded-lg h-64 overflow-hidden">
+                <img
+                  alt="content"
+                  className="object-cover object-center h-full w-full"
+                  src={data.picture}
+                />
+              </div>
+              <p className="text-base leading-relaxed py-14">{data.desc}</p>
+            </div>
+          ))}
         </div>
 
         <div>
