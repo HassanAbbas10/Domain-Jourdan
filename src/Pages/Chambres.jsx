@@ -13,13 +13,13 @@ const Chambres = () => {
   return (
     <>
    
-   <div className="h-[52vh] overflow-hidden relative">
+   <div className="h-[60vh] overflow-hidden relative">
   <img
-    className="w-screen h-[52vh] filter drop-shadow-2xl object-cover object-center"
+    className="w-screen h-[60vh] filter drop-shadow-2xl object-cover"
     src={Anastasiya}
     alt="Anastasiya"
   />
-  <div className="absolute top-0 left-0 w-full h-[52vh] bg-black opacity-40"></div>
+  <div className="absolute top-0 left-0 w-full h-[60vh] bg-black opacity-40"></div>
   <HeaderSec />
   <div className="absolute top-32 xl:ml-24 lg:ml-18 md:ml-18 sm:ml-12 ml-12 flex flex-col gap-y-3">
     <img src={icon1} alt="social media icons" />

@@ -6,6 +6,7 @@ import "./App.css";
 
 
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import Evenements from "./Pages/Evenements";
 
 const Layout = () => {
   
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "/chambres",
         element: <Chambres />,
+      },
+      {
+        path: "/events",
+        element: <Evenements />,
       },
     
     ],
