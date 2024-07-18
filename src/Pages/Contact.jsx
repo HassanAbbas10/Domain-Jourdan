@@ -1,5 +1,5 @@
 import HeaderSec from "@/components/Header/HeaderSec"
-import Anastasiya from '../utils/Pictures/2ndpage.jpg'
+import FifthPage from '../utils/Pictures/5th Page.jpg'
 import icon1 from '../Logos/I1.svg'
 import icon2 from '../Logos/I2.svg'
 import icon3 from '../Logos/I3.svg'
@@ -7,7 +7,7 @@ import icon4 from '../Logos/I4.svg'
 import icon5 from '../Logos/I5.svg'
 
 import Reservation from "@/components/Reservation/Reservation"
-import Section from "@/components/Section/Section"
+
 
 
 const Contact = () => {
@@ -33,7 +33,7 @@ const Contact = () => {
    
  </div>
  <Reservation className="top-[25rem]"/>
- <Gallery/>
+ 
  
      </>
   )
