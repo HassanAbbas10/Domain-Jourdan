@@ -29,6 +29,7 @@ const Home = () => {
         muted
         loop
       />
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div>
       <Header />
       <div className="absolute top-32 xl:ml-24 lg:ml-18 md:ml-18 sm:ml-12 ml-12 flex flex-col gap-y-3">
         <img src={icon1} alt="social media icons" />

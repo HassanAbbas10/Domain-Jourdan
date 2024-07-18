@@ -3,7 +3,7 @@ const Reservation = () => {
   return (
 <div>
 <header>
-  <nav className=" mx-auto mt-0.5 bg-white max-w-screen border border-gray-400 px-4 lg:px-6 py-6 dark:bg-gray-800">
+  <nav className=" mx-auto mt-0.5 bg-white max-w-screen border border-gray-300 px-4 lg:px-6 py-6 dark:bg-gray-800">
     <div className="flex flex-wrap justify-between items-center w-full ">
       <ul className="flex flex-col lg:flex-row font-medium space-y-4 lg:space-y-0 lg:space-x-8 items-center justify-center w-full ">
         <li>

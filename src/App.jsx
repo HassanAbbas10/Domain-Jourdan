@@ -1,7 +1,7 @@
 
 import Footer from "./components/Footer/Footer";
 import Home from "./Pages/Home";
-
+import Chambres from "./Pages/Chambres";
 import "./App.css";
 
 
@@ -26,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/chambres",
+        element: <Chambres />,
       },
     
     ],
