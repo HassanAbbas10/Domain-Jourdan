@@ -41,8 +41,7 @@ const Services = () => {
                           {data.description}
                         </h2>
                         <p className="leading-relaxed text-base">
-                          Fingerstache flexitarian street art 8-bit waistcoat.
-                          Distillery hexagon disrupt edison bulbche.
+                         {data.desc}
                         </p>
                       </div>
                     </div>

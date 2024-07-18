@@ -1,15 +1,14 @@
-
 import Footer from "./components/Footer/Footer";
 import Home from "./Pages/Home";
 import Chambres from "./Pages/Chambres";
 import "./App.css";
 
-
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Evenements from "./Pages/Evenements";
+import ServicesPage from "./Pages/ServicesPage";
+import GalleryPage from "./Pages/GalleryPage";
 
 const Layout = () => {
-  
   return (
     <div className="app">
       <Outlet />
@@ -17,7 +16,6 @@ const Layout = () => {
     </div>
   );
 };
-
 
 const router = createBrowserRouter([
   {
@@ -36,7 +34,18 @@ const router = createBrowserRouter([
         path: "/events",
         element: <Evenements />,
       },
-    
+      {
+        path: "/services",
+        element: <ServicesPage />,
+      },
+      {
+        path: "/gallery",
+        element: <GalleryPage />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
     ],
   },
 ]);
