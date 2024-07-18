@@ -4,7 +4,7 @@ import icon1 from "../Logos/I1.svg";
 import icon2 from "../Logos/I2.svg";
 import icon3 from "../Logos/I3.svg";
 import icon4 from "../Logos/I4.svg";
-import icon5 from "../Logos/I5.svg";
+import icon5 from "../Logos/phone...svg";
 import HomeLogo from "../Logos/DJ.svg";
 import leftLogo from "../Logos/signe-left.svg";
 import rightLogo from "../Logos/signe-right.svg";
@@ -37,6 +37,7 @@ const Home = () => {
         <img src={icon3} alt="social media icons" />
         <img src={icon4} alt="social media icons" />
         <img src={icon5} alt="social media icons" />
+        
       </div>
 
       <div className="absolute top-0 left-0 right-0 flex justify-center">

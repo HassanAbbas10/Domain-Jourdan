@@ -26,7 +26,7 @@ const HeaderSec = () => {
             className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
             id="mobile-menu-2"
           >
-            <img src={djLogo} height={100} width={100} alt="DJ-Logo" />
+            <img src={djLogo} height={100} width={140} alt="DJ-Logo" />
           </div>
         </div>
       </nav>
