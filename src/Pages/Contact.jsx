@@ -20,7 +20,7 @@ const Contact = () => {
     setFormData(e.target.value);
   };
   const handleSubmit = () => {};
-  return (
+  return(
     <>
       <div className="h-[60vh] overflow-hidden relative">
         <img
