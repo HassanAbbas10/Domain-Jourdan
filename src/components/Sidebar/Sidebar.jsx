@@ -1,6 +1,6 @@
 import djLogo from "../../Logos/DJ.svg";
 import CloseIcon from "@mui/icons-material/Close"; // Import CloseIcon from Material UI
-
+import heading1 from '../../Logos/sidebar1.svg'
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
     <div
@@ -9,50 +9,82 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
       } transition-transform duration-300 ease-in-out `}
     >
       <div className="flex items-center justify-between h-24 border-b bg-custom-gray border-gray-700 p-4">
-        <div className="flex items-center justify-center ml-[6.25rem] my-4">
+        <div className="flex items-center justify-center h-full w-full my-4">
           <img src={djLogo} height={100} width={100} alt="DJ-Logo" />
         </div>
 
-        <button
-          onClick={toggleSidebar}
-          className="p-2  text-white rounded -mr-[3.5rem]"
-        >
-          {console.log(toggleSidebar)}
-          {console.log(isOpen)}
-          <CloseIcon style={{ color: "#fff" }} />
-        </button>
+
+
+        {isOpen ? (
+          <button
+            onClick={toggleSidebar}
+            className="p-2 text-white rounded lg:-mr-[3.5rem] md:-mr-[3.5rem] sm:-mr-[3.5rem]"
+          >
+            <CloseIcon style={{ color: "#fff" }} />
+          </button>
+        ) : null}
+
+
       </div>
       <nav className="flex-1 p-4">
         <ul>
-          <li className="mb-4">
-            <a href="#" className="block p-2 rounded hover:bg-gray-700 uppercase">
-            Le domaine
+          <li className="flex py-4 items-start justify-start">
+           <img src={heading1} />
+            <a
+              href="#"
+              className="block p-2 rounded hover:bg-gray-700 uppercase"
+            >
+                 
+              Le domaine
             </a>
           </li>
-          <li className="mb-4">
-            <a href="#" className="block p-2 rounded hover:bg-gray-700 uppercase">
-            Les Chambres
+          <li className="flex py-4 items-start justify-start">
+            <a
+              href="#"
+              className="block p-2 rounded hover:bg-gray-700 uppercase"
+            >
+              Les Chambres
             </a>
           </li>
-          <li className="mb-4">
-            <a href="#" className="block p-2 rounded hover:bg-gray-700 uppercase">
-            Les Services
+          <li className="flex py-4 items-start justify-start">
+            <a
+              href="#"
+              className="block p-2 rounded hover:bg-gray-700 uppercase"
+            >
+              Les Services
             </a>
           </li>
-          <li>
-            <a href="#" className="block p-2 rounded hover:bg-gray-700 uppercase">
-            Événements
+          <li className="flex py-4 items-start justify-start">
+            <a
+              href="#"
+              className="block p-2 rounded hover:bg-gray-700 uppercase"
+            >
+              Événements
             </a>
           </li>
-          <li>
-            <a href="#" className="block p-2 rounded hover:bg-gray-700 uppercase">
-            Accès & contact
+          <li className="flex py-4 items-start justify-start">
+            <a
+              href="#"
+              className="block p-2 rounded hover:bg-gray-700 uppercase"
+            >
+              Accès & contact
             </a>
           </li>
-          <li>
-            <a href="#" className="block p-2 rounded hover:bg-gray-700 uppercase">
-            Galerie Photos
+          <li className="flex py-4 items-start justify-start">
+            <a
+              href="#"
+              className="block p-2 rounded hover:bg-gray-700 uppercase"
+            >
+              Galerie Photos
             </a>
+          </li>
+          <li className="flex py-4 items-center justify-center">
+            <button className="text-white bg-custom-brown font-light px-4 lg:px-8 py-0.5 lg:py-1.5">
+              <div className="flex flex-col">
+                <span>RESERVER</span>
+                <span className="text-xs ">Au meilleur tarif</span>
+              </div>
+            </button>
           </li>
         </ul>
       </nav>
