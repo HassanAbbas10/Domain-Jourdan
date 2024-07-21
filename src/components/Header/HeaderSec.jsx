@@ -3,7 +3,7 @@ import djLogo from "../../Logos/DJ.svg";
 import { useState } from "react";
 import Sidebar from "../Sidebar/Sidebar";
 const HeaderSec = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
   setIsSidebarOpen(!isSidebarOpen);
