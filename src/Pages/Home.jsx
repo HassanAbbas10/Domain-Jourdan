@@ -26,7 +26,6 @@ const Home = () => {
         className="w-screen h-screen filter drop-shadow-2xl object-cover "
         src={HomeVideo}
         autoPlay
-       
         loop
       />
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div>
