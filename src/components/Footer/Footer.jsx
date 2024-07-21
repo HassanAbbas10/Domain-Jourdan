@@ -7,7 +7,7 @@ const Footer = () => {
        
             <div className="grid grid-cols-2 lg:grid-cols-4 lg:gap-8 gap-12 pt-14 pb-20 max-w-md mx-auto md:max-w-xl lg:max-w-full">
                 <div className="block">
-                    <h4 className="text-xl text-white font-bold mb-7">Pagedone</h4>
+                    <h4 className="text-xl text-white font-bold mb-7">Domain Jourdan</h4>
                     <ul className="text-lg  transition-all duration-500">
                         <li className="mb-6"><a href="javascript:;"  className="text-gray-400 hover:text-white">Home</a></li>
                         <li className="mb-6"><a href="javascript:;"  className=" text-gray-400 hover:text-white">About</a></li>
@@ -79,7 +79,7 @@ const Footer = () => {
                             
                     </a>
                     <span className="text-gray-400  block">©
-<a href="https://pagedone.io/">pagedone</a> 2024, All rights reserved.</span>
+<a href="https://pagedone.io/">Domain Jourdan</a> 2024, All rights reserved.</span>
                     <div className="flex mt-4 space-x-4 sm:justify-center sm:mt-0 ">
                         <a href="javascript:;"  className="w-9 h-9 rounded-full border border-gray-700 flex justify-center items-center hover:border-indigo-600">
                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
