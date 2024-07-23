@@ -27,6 +27,7 @@ const Home = () => {
         src={HomeVideo}
         autoPlay
         loop
+        muted
       />
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div>
       <Header />
