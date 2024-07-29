@@ -17,16 +17,43 @@ import Services from "@/components/Services/Services";
 import Gallery from "@/components/Gallery/Gallery";
 import Events from "@/components/Events/Events";
 import Clients from "@/components/Clients/Clients";
-
+import { useEffect, useRef } from "react";
 const Home = () => {
+  const videoRef = useRef(null);
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible' && videoRef.current) {
+        videoRef.current.play().catch((error) => {
+          console.error('Error trying to play the video:', error);
+        });
+      }
+    };
+
+    if (videoRef.current) {
+      videoRef.current.play().catch((error) => {
+        console.error('Error trying to play the video:', error);
+      });
+    }
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, []);
   return (
     <>
     <div className="h-screen overflow-hidden">
       <video
+      ref={videoRef}
         className="w-screen h-screen filter drop-shadow-2xl object-cover "
         src={HomeVideo}
         autoPlay
         loop
+        muted
+    
+      
+     
       />
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div>
       <Header />
