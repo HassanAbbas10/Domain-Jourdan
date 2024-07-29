@@ -27,7 +27,6 @@ const Home = () => {
         src={HomeVideo}
         autoPlay
         loop
-        muted
       />
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div>
       <Header />
@@ -44,7 +43,7 @@ const Home = () => {
         <img src={HomeLogo} className="absolute top-8" />
       </div>
 
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col md:flex-row items-center text-center md:text-left">
+      <div className="absolute sm:top-1/2 top-[25rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col md:flex-row items-center text-center md:text-left">
         <img
           src={leftLogo}
           alt="Left Logo"
@@ -61,7 +60,7 @@ const Home = () => {
       </div>
 
       
-      <button className="absolute top-[26rem] p-1.5 mt-8 lg:p-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 items-center justify-center text-white bg-custom-brown font-light px-4">
+      <button className="absolute top-[30rem] sm:top-[26rem] p-1.5 my-10 lg:p-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 items-center justify-center text-white bg-custom-brown font-light px-4">
     <span className="text font-quicksand">VOIR LE DEMANE</span>
   </button>
 
