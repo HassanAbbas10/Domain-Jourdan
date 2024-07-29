@@ -11,8 +11,8 @@ const HeaderSec = () => {
 
   return (
     <>
-    <header className=" w-full absolute top-0">
-      <nav className=" border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+    <header className=" w-full absolute top-0 ">
+      <nav className=" border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800 ">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <div className="flex flex-col">
          <button onClick={toggleSidebar}>
@@ -40,7 +40,7 @@ const HeaderSec = () => {
         </div>
       </nav>
     </header>
-     <Sidebar isOpen={!isSidebarOpen} toggleSidebar={toggleSidebar} />
+     <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
      </>
   );
 };

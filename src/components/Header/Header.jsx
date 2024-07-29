@@ -38,7 +38,7 @@ const Header = () => {
     </nav>
 
   </header>
-  <Sidebar isOpen={!isSidebarOpen} toggleSidebar={toggleSidebar} />
+  <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
    </>
   );
 };
