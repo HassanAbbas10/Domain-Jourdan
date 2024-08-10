@@ -5,7 +5,7 @@ import { Instagram } from "@mui/icons-material";
 import { LinkedIn } from "@mui/icons-material";
 const Footer = () => {
   return (
-    <footer className="w-full bg-gray-900">
+    <footer className="w-full bg-gray-900 mt-[20rem]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-center">
           <img src={Dj} />

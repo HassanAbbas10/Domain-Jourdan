@@ -7,7 +7,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Evenements from "./Pages/Evenements";
 import ServicesPage from "./Pages/ServicesPage";
 import GalleryPage from "./Pages/GalleryPage";
-import Contact from './Pages/Contact'
+import Contact from "./Pages/Contact";
 
 const Layout = () => {
   return (
