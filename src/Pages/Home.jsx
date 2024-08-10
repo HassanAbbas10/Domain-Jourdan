@@ -1,3 +1,4 @@
+// TODO:Have to make universal imports from index.js
 import HomeVideo from "../utils/video/Home.mp4";
 import Header from "@/components/Header/Header";
 import icon1 from "../Logos/I1.svg";
